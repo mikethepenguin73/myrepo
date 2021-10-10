@@ -127,4 +127,21 @@ def fai2volte(f,val):
 
 # Provo la funzione
 fai2volte(stampa_val,'prova')
+
+################Esercizio 3#######################
+def stampa2volte(val):
+  print(val)
+  print(val)
+
+################Esercizio 4#######################
+# passo come argomenti a fai2volte la funzione stampa2volte e la stringa "spam"
+
+fai2volte(stampa2volte,'spam')
+
+################Esercizio 5#######################
+def fai_quattro(f,val):
+  fai2volte(f,val)
+  fai2volte(f,val)
+
+fai_quattro(print,'spam')
 ```
