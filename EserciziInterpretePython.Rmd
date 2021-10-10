@@ -80,3 +80,51 @@ giustif_destra(s,60)
 giustif_destra(s,4)
 giustif_destra(s,30)
 ```
+
+> Un oggetto funzione è un valore che potete assegnare a una variabile o passare come argomento. Ad esempio, **fai2volte** è una funzione che accetta un oggetto funzione come argomento e la chiama per due volte.
+
+    def fai2volte (f):
+      f()
+      f()
+
+> Ecco un esempio che usa **fai2volte** per chiamare una funzione di nome stampa_spam due volte.
+
+    def stampa_spam():
+      print('spam')
+
+    fai2volte(stampa_spam)
+
+1.  Scrivete questo esempio in uno script e provatelo.
+2.  Modificate **fai2volte** in modo che accetti due argomenti, un oggetto funzione e un valore, e che chiami la funzione due volte passando il valore come argomento.
+3.  Copiate nel vostro script la definizione di **stampa_2volte** che abbiamo visto nel corso di questo capitolo.
+4.  Usate la versione modificata di **fai2volte** per chiamare **stampa_2volte** per due volte, passando 'spam' come argomento.
+5.  Definite una nuova funzione di nome **fai_quattro** che richieda un oggetto funzione e un valore e chiami la funzione per 4 volte, passando il valore come argomento. Dovrebbero esserci solo due istruzioni nel corpo di questa funzione, non quattro.
+
+```{python}
+
+################Esercizio 1#######################
+# definisco la funzione stampa spam
+def stampa_spam():
+  print('spam')
+
+# definisco la funzione fai due volte
+def fai2volte (f):
+  f()
+  f()
+
+# faccio il test della funzione fai due volte
+fai2volte(stampa_spam)
+
+################Esercizio 2#######################
+# creo la funzione che stampa il valore
+def stampa_val(val):
+  print(val)
+
+# modifico la funzione fai2volte per aggiungere un argomento valore
+def fai2volte(f,val):
+  f(val)
+  f(val)
+
+# Provo la funzione
+fai2volte(stampa_val,'prova')
+```
